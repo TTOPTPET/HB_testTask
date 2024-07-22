@@ -1,0 +1,24 @@
+.products {
+    position: relative;
+    &_wrapper {
+        margin-top: 85px;
+        display: grid;
+        grid-template-columns: 953px auto;
+        gap: 30px;
+    }
+    &_items_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &_list_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 43px;
+    }
+    &_circles {
+        position: absolute;
+        bottom: -110px;
+        left: 14.5%;
+    }
+}

@@ -1,0 +1,250 @@
+.flatItem {
+    &_wrapper {
+        z-index: 100;
+        width: 406px;
+        height: 522px;
+        border-radius: 10px;
+        background-color: #fffefe;
+        box-shadow: 0 20px 40px rgba(#877CCA, 0.15);
+        position: relative;
+    }
+    &_status {
+        position: absolute;
+        right: 0;
+        width: 66px;
+        height: 37px;
+        background: linear-gradient(45deg, #FFD54F, #FEC100);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        color: #fff;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+        text-shadow: 0 1px 0 rgba(#934F00, 0.3);
+    }
+    &_image_wrapper {
+        background-color: #e4e2e2;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 226px;
+    }
+    &_content_wrapper {
+        padding: 21px 20px;
+    }
+    &_header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_price {
+        &_amount {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #664ef9;
+        }
+        &_descr {
+            font-size: 14px;
+            line-height: 17px;
+            color: #bdbdbd;
+        }
+    }
+    &_info {
+        display: flex;
+        gap: 8px;
+        &_item {
+            &_wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: #f8f8f8;
+                border-radius: 18px;
+                width: inherit;
+                height: 34px;
+                padding: 8px;
+            }
+            &_icon {
+                margin-right: 5px;
+            }
+            &_text {
+                font-size: 14px;
+                line-height: 17px;
+                color: #686868;
+                font-weight: 500;
+                &_square {
+                    font-size: 9px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    &_main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 25px;
+        column-gap: 30px;
+        row-gap: 10px;
+        &_adressInfo {
+            &_wrapper {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                &_metro {
+                    gap: 5px;
+                }
+                &_area {
+                    gap: 5px;
+                }
+            }
+            &_text {
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 600;
+            }
+        }
+    }
+    &_descr {
+        &_wrapper {
+            margin-top: 20px;
+        }
+        &_text {
+            font-size: 12px;
+            line-height: 15px;
+            color: #8291a3;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+        }
+    }
+    &_line {
+        margin-top: 12px;
+        height: 2px;
+        width: 100%;
+        background-color: rgba(#664ef9, .05);
+    }
+    &_buttons_wrapper {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_contact {
+        &_button {
+            cursor: pointer;
+            width: 124px;
+            height: 37px;
+            background-color: #fff;
+            border: none;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(#0060ce, .1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all .2s;
+            &[data-hovered],
+            &[data-pressed], &[data-selected] {
+                background-color: #f5f3ff;
+            }
+        }
+        &_text {
+            font-size: 14px;
+            line-height: 17px;
+            color: #664ef9;
+            font-weight: 700;
+        }
+        &_popover {
+            width: 274px;
+            height: 297px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 40px rgba(#877cca, .3);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &_avatar {
+                &_image {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+                    border: 4px solid #664ef9;
+                }
+            }
+            &_owner {
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 500;
+                color: #bdbdbd;
+                margin-top: 15px;
+            }
+            &_name {
+                font-size: 20px;
+                color: #1e2123;
+                font-weight: 700;
+                margin-top: 5px;
+            }
+            &_phone {
+                font-size: 20px;
+                color: #1e2123;
+                font-weight: 700;
+                margin-top: 15px;
+            }
+            &_mail {
+                font-size: 16px;
+                font-weight: 500;
+                color: #664ef9;
+                margin-top: 10px;
+            }
+            &_links {
+                &_wrapper {
+                    display: flex;
+                    gap: 20px;
+                    margin-top: 25px;
+                }
+                &_item {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &_viber {
+                        background-color: #7b519d;
+                    }
+                    &_whatsapp {
+                        background-color: #0dbb41;
+                    }
+                    &_mail {
+                        background-color: #664ef9;
+                    }
+                }
+            }
+        }
+    }
+    &_more {
+        cursor: pointer;
+        width: 110px;
+        height: 37px;
+        background-color: rgba(#ffd54f, .1);
+        border: none;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s;
+        color: #fec100;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 700;
+        &:hover {
+            background-color: rgba(#ffd54f, .2);
+        }
+    }
+}
